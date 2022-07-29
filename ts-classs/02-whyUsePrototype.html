@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function QQUser(number_, mark_, age_) {
+      this.number = number_
+      this.mark = mark_
+      this.age = age_
+    }
+
+    QQUser.prototype.commonFriends = ['jack', 'tom', 'mike']
+    QQUser.prototype.show = function () {
+      console.log(
+        `${this.number}-${this.mark}-${this.age}-${this.commonFriends}`
+      )
+    }
+
+    const u1 = new QQUser('10086', 'mary', 21)
+    const u2 = new QQUser('10086', 'jerry', 21)
+
+    u1.show()
+    u2.show()
+
+    // console.log(QQUser.prototype)
+    // console.log(QQUser.prototype.constructor === QQUser)
+  </script>
+</html>
