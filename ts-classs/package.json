@@ -5,7 +5,7 @@
   "main": "01-whyUsePrototype.js",
   "scripts": {
     "dev": "nodemon --watch src/ -e ts --exec ts-node ./src/index.ts",
-    "start": "parcel start"
+    "start": "parcel ./index.html"
   },
   "keywords": [],
   "author": "",
