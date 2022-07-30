@@ -1,0 +1,20 @@
+{
+  "name": "ts-classs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01-whyUsePrototype.js",
+  "scripts": {
+    "dev": "nodemon --watch src/ -e ts --exec ts-node ./src/index.ts",
+    "start": "parcel start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "parcel-bundler": "^1.12.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}
