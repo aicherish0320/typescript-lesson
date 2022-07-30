@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function QQUser(number_, mark_, age_) {
+      this.number = number_
+      this.mark = mark_
+      this.age = age_
+    }
+
+    QQUser.prototype.commonMsg = 'Hello'
+    QQUser.prototype.commonFriends = ['jack', 'tom', 'mike']
+
+    const u1 = new QQUser('10086', 'mary', 21)
+
+    QQUser.prototype = {
+      commonFriends: ['rose'],
+      commonMsg: 'World'
+    }
+
+    console.log('u1 >>> ', u1.commonFriends, u1.commonMsg)
+  </script>
+</html>
